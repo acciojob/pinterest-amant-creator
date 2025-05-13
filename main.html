@@ -1,16 +1,61 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pinterest Hero Section</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+
+    .hero-image {
+      width: 50%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .hero-text {
+      padding: 20px;
+      max-width: 400px;
+    }
+
+    .hero-text h1 {
+      margin-top: 0;
+    }
+
+    .explore-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #e60023;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+
+      .hero-image {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
-</html>
+  <div class="hero">
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Nature" class="hero-image" />
+    <div
