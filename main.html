@@ -2,60 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pinterest Hero Section</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pinterest Clone</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
     .hero {
       display: flex;
       justify-content: center;
       align-items: center;
+      gap: 2rem;
       padding: 20px;
-      flex-wrap: wrap;
     }
 
-    .hero-image {
-      width: 50%;
-      height: 300px;
+    .hero img {
+      width: 500px;
+      height: 250px;
       object-fit: cover;
-      border-radius: 8px;
     }
 
     .hero-text {
-      padding: 20px;
-      max-width: 400px;
-    }
-
-    .hero-text h1 {
-      margin-top: 0;
+      max-width: 300px;
     }
 
     .explore-btn {
-      display: inline-block;
       padding: 10px 20px;
-      background-color: #e60023;
+      background-color: red;
       color: white;
+      border: none;
       border-radius: 5px;
       text-decoration: none;
-      margin-top: 10px;
-    }
-
-    @media (max-width: 768px) {
-      .hero {
-        flex-direction: column;
-      }
-
-      .hero-image {
-        width: 100%;
-      }
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
   <div class="hero">
-    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Nature" class="hero-image" />
-    <div
+    <img src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Beautiful landscape" />
+    
+    <div class="hero-text">
+      <h1>Welcome to my Pinterest clone</h1>
+      <p>Discover new inspiration and save your favorite ideas</p>
+      <a href="#" class="explore-btn">Explore Now</a>
+    </div>
+  </div>
+</body>
+</html>
